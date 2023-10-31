@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal Embedded CSS</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="How to style in one location for 1 page">
+<style>
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+body{
+background-color: rgb(171, 171, 171);
+}
+
+.pagebox{
+width: 70%;
+margin: auto;
+background-color: rgb(255, 255, 255);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+h1{
+font-size: 60px;
+}
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(56, 35, 25);
+}
+
+li{
+float: left;
+}
+
+li a{
+display: block;
+color: aliceblue;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+li a:hover:not(.active){
+background-color: black;
+}
+
+.active{
+background-color: rgb(199, 159, 110);
+}
+
+.allignright{
+float: right;
+}
+
+h2{
+color: rgb(224, 180, 125);
+}
+
+footer{
+text-align: center;
+font-style: italic;
+margin-top: auto;
+padding: 50px 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class="pagebox">
+<header><h1>HOME PAGE</h1></header>
+
+<!--Change the active class to whichever page that is matches to-->
+<nav>
+<ul>
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href="news.html">NEWS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li class="alignright"><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+<section>
+<article>
+<h2>Article 1</h2>
+<p>
+This is a paragraph that is related to article 1.
+</p>
+<hr/>
+</article>
+
+<article>
+<h2>Article 2</h2>
+<p>
+This is a paragraph related to article 2
+</p>
+<hr/>
+</article>
+</section>
+
+<footer><p>Page made by Abagail Seybold &copy;2023</p></footer>
+</div>
+</body>
+</html>
